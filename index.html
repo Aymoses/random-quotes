@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUOTE GENERATOR</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:ital,wght@0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="newQuote()">
+    <div class="background">
+    <header>
+
+      <div class="logo">
+        <img src="./images/ay2.png" height="40rem" width="40rem" />
+        <h1>Simple Qoutes Generator</h1>
+      </div>
+
+      <div class="icons">
+        <div class="tooltip">
+          <img src="./images/music.png" id="img" height="30rem" width="30rem" />
+          <span class="tooltiptext">Click to play or stop music</span>
+        </div>
+
+        <img
+          src="./images/camera.png"
+          id="camera"
+          height="27rem"
+          width="27rem"
+        />
+
+        <!-- <img src="./images/user6.png" id="user" height="28rem" width="28rem" />
+      </div> -->
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        
+
+        <div id="quoteDisplay">
+          <!--quotes will display here-->
+        </div>
+
+        <button onclick="newQuote()">Click for New Quote</button>
+      </div>
+    </section>
+
+    <!-- Audio-->
+    <audio id="audio" loop="true">
+      <source src="./songs/ishq.mp3" />
+    </audio>
+
+    <script type="text/javascript">
+      const audio = document.getElementById("audio");
+      const img = document.getElementById("img");
+
+      let isPlaying = false;
+      img.addEventListener("click", () => {
+        if (!isPlaying) {
+          audio.play();
+          isPlaying = !isPlaying;
+          console.log(isPlaying);
+        } else {
+          audio.pause();
+          isPlaying = !isPlaying;
+          console.log(isPlaying);
+        }
+      });
+    </script>
+
+    
+      <footer>
+        <p class="copy">&copy; All rights reserved 2022.</p>
+      </footer>
+  
+      </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ .background{
+    background-image: url('./images/bg.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+} 
+
+header{
+    max-height: 3.5rem;
+    max-width: 100%;
+    position: static;
+    padding-top: 0.5rem;
+    background-color: silver;
+    display: flex;
+    overflow: hidden;
+}
+ .logo{
+    display: flex;
+    
+}
+.icons{
+    flex-wrap: nowrap;
+}
+
+#img{
+    margin-left: 52rem;
+    padding: 0.2rem;
+}
+#user{
+    margin-left: 1rem;
+    padding: 0.2rem;
+}
+#user:hover{
+    background-color: rgb(168, 154, 154);
+}
+
+#camera{
+    margin-left: 1rem;
+    padding: 0.2rem;
+}
+#camera:hover{
+    background-color: rgb(168, 154, 154);
+}
+
+
+#quoteDisplay{
+    border:none;
+    width: 40%;
+    height: 250px;
+    margin: auto;
+    font-size: 1.5rem;
+    font-family: 'Pattaya', sans-serif;
+    color: white;
+    padding: 4rem;
+    animation-name: quote;
+    animation-iteration-count: infinite;
+
+}
+
+.container{
+    margin: 5rem;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Pattaya', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    color:black;
+    flex-wrap: nowrap;
+}
+
+button{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 25px;
+    border: none;
+    width: 35%;
+    border-bottom-left-radius: 5rem;
+    background-color: rgb(134, 130, 130);
+    color: black;
+    padding: 1rem;
+}
+
+.tooltip{
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 180px;
+    background-color: black;
+    color: white;
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    padding: 3px;
+    position: absolute;
+    z-index: 1;
+    bottom:-5px;
+    right: 4%;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+}
+
+footer{
+    height: 3rem;
+    width: 100%;
+    background-color: silver;
+    margin-top: 13rem;
+}
+
+.copy{
+    margin-left: 63rem;
+    padding: 0.7rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width:1024px){
+    
+    html{
+        font-size: 40%;
+    }
+
+    header{
+        align-items: center;
+        height: 7rem;
+        overflow: hidden;
+    }
+    p{
+     margin: auto;
+    }
+    .hero{
+        text-align: center;
+    }
+    button{
+        width: fit-content;
+        padding: 0.2rem;
+    }
+
+
+}
